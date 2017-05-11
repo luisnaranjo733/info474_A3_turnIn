@@ -4,9 +4,9 @@
 
 ![Complete example](./imgs/overView.png)
 
-This is an example of the bubble graph created by the api.
+This is an example of the bubble graph created by the bubbles.js api.
 
-This type of graph in the example has purchases with dot sizes relative to the size of the purchase amount and the dots colors are determined by the credit card type used to purchase. By hovering over a dot you can get more details like card type, the order id, and the purchase amount. This graph also allows for the changing of how close or far you want the dots to be with one another.
+This type of graph in the example has purchases with dot sizes relative to the size of the purchase amount and the dots colors are determined by the credit card type used to make purchase. By hovering over a dot you can get more details like card type, the order id, and the purchase amount. This graph also allows for the changing of how close or far you want the dots to be with one another.
 
 This is a good graph if you have categorical information you want to break out into groups and gain characteristics for each single input as well.
 
@@ -34,7 +34,7 @@ visual skeleton example:
 ```var chartWrapper = d3.select('#my-div').datum([dataSet]).call(myChart);```
 
 
-Here is a table of methods for the API that can be called on bubbles that can be passed into myChart to set it up accordingly 
+Here is a table of methods for the API that can be called on the ```bubbles``` function that can be passed into myChart to set it up accordingly
 
 ## Bubbles methods
 
@@ -51,4 +51,4 @@ Here is a table of methods for the API that can be called on bubbles that can be
 |chart.strength | integer (recommend >0 #s ), chart.strength(-100) | sets the power in which the bubbles repel off on another to add more or less spacing between them |
 
 
-link to an example
+link to an [example](http://staff.washington.edu/ibaghai/info474_A3ex/bubbles.html)

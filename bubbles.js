@@ -1,24 +1,23 @@
-
 //
 function bubbles() {
 
-//local variables/defaults for example
+    //local variables/defaults for example
     var width = 960,
         height = 960,
-        columnForColors = "cardType",
-        columnForRadius = "orderAmount",
-        identifer = "id";
-        strength = -50,
-        range = [5,30]
-        title = "Insert title";
+        columnForColors = "columnsForColors",
+        columnForRadius = "columnsForRadius",
+        identifer = "id_or_desciber";
+    strength = -50,
+        range = [5, 30]
+    title = "Insert title";
 
-//function to create graph
+    //function to create graph
     function chart(selection) {
         var data = selection.enter().data();
         var div = selection,
             svg = div.selectAll('svg'),
             head = div.selectAll('head');
-            var head = selection
+        var head = selection
             .append('div')
             .style("color", "black")
             .text(title)
@@ -64,7 +63,7 @@ function bubbles() {
             return +d[columnForRadius];
         })]).range(range)
 
-//build circles
+        //build circles
         var node = svg.selectAll("circle")
             .data(data)
             .enter()
@@ -77,7 +76,8 @@ function bubbles() {
             })
             .attr('transform', 'translate(' + [width / 2, height / 2] + ')')
             .on("mouseover", function(d) {
-                tooltip.html(columnForColors+ ": " + d[columnForColors] + "<br>" + identifer + ": " + d[identifer] + "<br>" + columnForRadius +": " + d[columnForRadius] );
+                tooltip.html(columnForColors + ": " + d[columnForColors] + "<br>" + identifer + ": " + d[identifer] +
+                    "<br>" + columnForRadius + ": " + d[columnForRadius]);
                 return tooltip.style("visibility", "visible");
             })
             .on("mousemove", function() {
@@ -89,7 +89,7 @@ function bubbles() {
     }
 
 
-//getter/setter methods
+    //getter/setter methods
     chart.strength = function(value) {
         if (!arguments.length) {
             return strength;
