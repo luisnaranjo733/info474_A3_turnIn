@@ -14,6 +14,7 @@ function bubbles() {
     //function to create graph
     function chart(selection) {
         var data = selection.enter().data();
+        console.log(data);
         var div = selection,
             svg = div.selectAll('svg'),
             head = div.selectAll('head');
