@@ -1,4 +1,6 @@
-# Iman Baghai
+Hosted implementation of Iman's reusable chart (by Luis) is [here](http://students.washington.edu/jnaranj0/info474//iman/info474_A3_turnIn/http://students.washington.edu/jnaranj0/info474//iman/info474_A3_turnIn/).
+
+# Iman Baghai & Luis Naranjo
 
 # Bubbles plot
 
