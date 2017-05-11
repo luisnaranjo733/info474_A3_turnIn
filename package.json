@@ -1,0 +1,20 @@
+{
+  "name": "iman_a3_implementation",
+  "version": "1.0.0",
+  "description": "![Complete example](./imgs/example5.gif)",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisnaranjo733/info474_A3_turnIn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisnaranjo733/info474_A3_turnIn/issues"
+  },
+  "homepage": "https://github.com/luisnaranjo733/info474_A3_turnIn#readme"
+}
